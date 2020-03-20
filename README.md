@@ -9,7 +9,8 @@ Clone this project and run `netlify dev`, then run the following `curl` commands
 `time curl --request GET "http://localhost:8888/.netlify/functions/notfoundbug"`
 ```
 BUG
-curl --request GET "http://localhost:8888/.netlify/functions/notfoundbug"  0.00s user 0.01s system 48% cpu 0.018 total
+curl --request GET "http://localhost:8888/.netlify/functions/notfoundbug"
+0.00s user 0.01s system 48% cpu 0.018 total
 ```
 
 `netlify dev` output:
@@ -30,7 +31,8 @@ Response with status 404 in 0 ms.
 `time curl --request POST --data "{}" "http://localhost:8888/.netlify/functions/notfoundbug"`
 ```
 curl: (52) Empty reply from server
-curl --request POST --data "{}"   0.01s user 0.01s system 0% cpu 2:00.03 total
+curl --request POST --data "{}"
+0.01s user 0.01s system 0% cpu 2:00.03 total
 ```
 
 `netlify dev` output:
